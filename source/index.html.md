@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Document
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
@@ -17,223 +17,158 @@ includes:
 search: true
 ---
 
-# Introduction
+# Tổng Quan
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Tài liệu hướng dẫn cơ bản các chức năng quản trị hệ thống Thiên Đường Gia Dụng dot com
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+Vì nền tảng xây dựng ecommerce Thiên Đường Gia Dụng dựa trên wordpress. Nên Cơ bản cần nắm 1 số khái niệm cơ bản để có thể sử dụng tốt platform này
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+# Đăng Nhập
 
-# Authentication
-
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-```
-
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
+Để Đăng Nhập, Dùng link sau : http://thienduonggiadung.com/wp-admin/
+Chọn mục Log in with username and password
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+  Liên hệ công ty để có thông tin tài khoản quản trị
 </aside>
 
-# Kittens
+> ![alt text](images/1.png)
+![alt text](images/2.png)
 
-## Get All Kittens
+# Giao Diện
 
-```ruby
-require 'kittn'
+## Thay đổi Top Header
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
+![alt text](images/top_header.png)
 
-```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+Thanh menu bar nằm góc trên phải để các link hữu dụng.
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
+Cách Thay Đổi link và title:
 
-```javascript
-const kittn = require('kittn');
+`Left Menu -> Giao Diện -> Menu`
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
+Chọn Menu có tên : Top Bar Menu -> `Chọn`
 
-> The above command returns JSON structured like this:
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
+> ![alt text](images/3.png)
 
-This endpoint retrieves all kittens.
+Trong màn hình này có thể sửa title, url, thêm / sửa / xoá menu hoặc submenu tuỳ ý.
+Sau khi sửa xong, click `Lưu Menu` để hoàn tất.
+> ![alt text](images/4.png)
 
-### HTTP Request
 
-`GET http://example.com/api/kittens`
+## Thay Đổi Menu Chính
+![alt text](images/main_menu.png)
+Thanh menu bar chính nằm phía dưới logo.
 
-### Query Parameters
+Cách Thay Đổi link và title:
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+`Left Menu -> Giao Diện -> Menu`
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+Chọn Menu có tên : Main Menu -> `Chọn`
+
+
+> ![alt text](images/main_menu_edit.png)
+
+Trong màn hình này có thể sửa title, url, thêm / sửa / xoá menu hoặc submenu tuỳ ý.
+Sau khi sửa xong, click `Lưu Menu` để hoàn tất.
+
+> ![alt text](images/main_menu_edit2.png)
+
+
+## Thay Đổi Header
+
+Một số tuỳ chỉnh của header nằm trong mục `Left Menu -> Porto -> Theme Options`
+![alt text](images/header.png)
+### Logo
+
+Vào mục `Chung -> Logo, Biểu Tượng`
+
+Trong mục này có thể thay đổi hình ảnh logo cho web, cho sticky (trạng thái lúc scroll lên), cho mobile
+
+Bạn cũng có thể thay đổi kích thước sao cho phù hợp 
+>![alt text](images/logo_edit.png)
+
+
+### Thay đổi màu sắc
+
+Để thay đổi màu sắc của từng item trên header, bạn vào mục `Skin`
+Mục Skin này thay đổi màu sắc, font chữ của toàn bộ các item trong Web
+
+Đối với Header, thì bạn hãy chọn `Đầu Trang`, Menu chính thì  `Menu Chính`
+
+>![alt text](images/header_edit_color.png)
+
+### Thay Đổi Cấu hình Form Search
+Vào mục `Đầu Trang -> Form Tìm Kiếm`
+>![alt text](images/header_search_edit.png)
+
+### Thay Đổi Text Hotline, thời gian làm việc
+![alt text](images/header_hotline.png)
+
+Vào mục `Đầu Trang` . Kéo xuống dưới mục Thông tin Liên Hệ
+
+> ![alt text](images/header_hotline_edit.png)
+
+## Thay Đổi Banner
+Từ `Left Menu` chọn `LayerSlider -> All Sliders -> Home `
+>![alt text](images/banner_edit.png)
+
+Trong màn hình , gồm ba mục Settings của Slider, Sliders, và CallBack
+
+>![alt text](images/slider/slider1.png)
+
+### Slider Settings
+Chỉnh sửa các thông số như width, height, loại, hiển thị navigation, chung chung của slider.
+
+>![alt text](images/slider/slider2.png)
+
+
+### Sliders
+Chỉnh sửa các slider riêng lẻ.
+
+Nếu không muốn active slider nào thì chọn chế độ `HIDE` trên từng slider
+![alt text](images/slider/slider3.png)
+
+### Thay Đổi Slider
+
+Để Thêm 1 Slider, có thể thêm mới (Add New) trong Sliders. Hoặc có thể `Duplicate` SLider.
+
+Thêm Layer `Image` hoặc `Text` để hiện thị theo ý muốn
+>![alt text](images/slider/slider4.png)
+> ![alt text](images/slider/slider5.png)
+
+
+
+<aside class="notice">
+  Xem thêm hướng dẫn sử dụng của LayerSlider tại https://layerslider.kreaturamedia.com/documentation/
 </aside>
 
-## Get a Specific Kitten
 
-```ruby
-require 'kittn'
+# Quản Lý Danh Mục
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
+## Danh Mục Sản Phẩm
+Vào Mục `Sản Phẩm` -> `Danh Mục` 
+> ![alt text](images/woo/category.png)
 
-```python
-import kittn
+## Thêm Danh Mục
+Nhập **Tên** và chọn **Danh Mục Cha** nếu cần thiết
+>![alt text](images/woo/category_add.png)
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+## Sửa Danh Mục
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
+Rê chuột hoặc double click vào từng danh mục để sửa hoặc xoá
+>![alt text](images/woo/category_edit.png)
 
-```javascript
-const kittn = require('kittn');
+# Quản Lý Sản Phẩm
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
+Vào Mục `Sản Phẩm` -> `Tất Cả Sản Phẩm` để Thêm Xoá Sửa **Sản Phẩm**
+>![alt text](images/woo/products.png)
 
-> The above command returns JSON structured like this:
+## Thêm Sản Phẩm
+Trên Cùng ở màn hình `Tất Cả Sản Phẩm`, chọn 'Thêm Mới' hoặc 'Nhập Vào' (import)
+>![alt text](images/woo/products_add_new.png)
+>![alt text](images/woo/products_add_full.png)
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
 
