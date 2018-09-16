@@ -1,20 +1,20 @@
 ---
 title: Document
 
-language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
+<!-- language_tabs: # must be one of https://git.io/vQNgJ -->
+  <!-- - shell
   - ruby
   - python
-  - javascript
+  - javascript -->
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <a href='#'>Copyright 2018</a>
+  - <a href='#'>NHT</a>
 
-includes:
-  - errors
+<!-- includes: -->
+  <!-- - errors -->
 
-search: true
+search: false
 ---
 
 # Tổng Quan
@@ -169,6 +169,29 @@ Vào Mục `Sản Phẩm` -> `Tất Cả Sản Phẩm` để Thêm Xoá Sửa **
 ## Thêm Sản Phẩm
 Trên Cùng ở màn hình `Tất Cả Sản Phẩm`, chọn 'Thêm Mới' hoặc 'Nhập Vào' (import)
 >![alt text](images/woo/products_add_new.png)
+Thứ tự các bước cần thực hiện :
+
+(1) Nhập Tên Sản Phẩm 
+
+(2) Nhập Mô Tả Chi Tiết
+
+(3) Chọn Danh mục sản phẩm
+
+(4) Update Hình ảnh đại diện và hình ảnh sản phẩm
+
+(5) Nhập Giá Bán Thường và Giá bán Khuyến Mãi (nếu Có)
+
+(6) Trong mục kiểm kê kho hàng , nhập số lượng sản phẩm
+
+(7) Đối với một số sản phẩm có nhiều màu, thêm ở phần `Các Thuộc Tính` của Sản Phẩm
+
+(8) Nhập Mô tả ngắn của Sản Phẩm 
+
+(9) Nhập từ khoá SEO của sản phẩm
+
+Sau khi hoàn tất, nhấn Publish Sản Phẩm 
+
+
 >![alt text](images/woo/products_add_full.png)
 
 
