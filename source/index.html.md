@@ -194,4 +194,28 @@ Sau khi hoàn tất, nhấn Publish Sản Phẩm
 
 >![alt text](images/woo/products_add_full.png)
 
+##Xoá sản phẩm 
 
+Ở màn hình `Tất cả sản phẩm`, nhập mã sản phẩm cần tìm -> 'Tìm sản phẩm'
+
+Di chuyển đến sản phẩm cần xoá -> `Xoá tạm`
+
+>![alt text]()
+
+#Quản lý thành viên
+
+Vào mục `Thành viên` -> `Tất cả người dùng` để Thêm Xoá Sửa **Thành Viên**
+>![alt text]()
+
+##Thêm thành viên
+
+Trên cùng ở màn hình `Tất cẩ người dùng`, chọn 'Thêm mới' 
+>![alt text]()
+
+Điền đầy đủ thông tin vào các trường 
+
+Sau khi hoàn tất, nhấn 'Thêm người dùng mới'
+
+##Xoá thành viên
+Ở màn hình `Tất cả người dùng`, di chuyển đến thành viên cần xoá -> `xoá`
+>![alt text]()
